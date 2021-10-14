@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const Category = () => {
     return (
-        <Section id="category">
+        <Section id="category" className={styles.section}>
             <div className={cx('container', styles.title)}>
                 <h3>Browser Our Category</h3>
                 <h3>Receipt</h3>

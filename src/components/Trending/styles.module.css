@@ -5,14 +5,15 @@
 .title {
   margin-bottom: 32.78px;
 }
-
 .title h3 {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
-  font-size: 38px;
-  line-height: 50px;
+  font-size: 24px;
+  line-height: 30px;
+  /* or 125% */
 
+  /* Color/Dark */
   color: #333333;
 }
 
@@ -20,18 +21,32 @@
   color: #8bac3e;
 }
 
+@media (min-widht: 768px) {
+  .title h3 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    /* or 132% */
+  }
+}
+
 .trending_cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
 
-  padding-left: 5px;
-  padding-right: 5px;
+@media (min-width: 768px) {
+  .trending_cards {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .card {
-  min-width: 282.98px;
-  max-width: 282.98px;
-
+  width: 100%;
   margin: 0px 10px 30px;
 
   box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
@@ -39,6 +54,13 @@
   border: none;
 
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card {
+    min-width: 282.98px;
+    max-width: 282.98px;
+  }
 }
 
 .card::before {

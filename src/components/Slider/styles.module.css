@@ -87,9 +87,14 @@
 }
 
 .slider_navigator {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   gap: 13px;
+}
+@media (min-width: 768px) {
+  .slider_navigator {
+    display: flex;
+  }
 }
 
 .slider_navigator button {

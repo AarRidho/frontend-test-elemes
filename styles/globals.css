@@ -26,7 +26,12 @@ img {
   -ms-interpolation-mode: nearest-neighbor;
 }
 
-@media (min-width: 1200px) {
+.container {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+@media (min-width: 1440px) {
   .container {
     max-width: 1224px;
   }

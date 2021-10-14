@@ -9,13 +9,12 @@
   background: #ffffff;
   border: 1px solid #f8f8f8;
   box-sizing: border-box;
-
-  padding: 12px 0px;
 }
 
 @media (min-width: 768px) {
   .navbar {
     background: transparent;
+    padding: 12px 0px;
   }
 }
 
@@ -35,7 +34,77 @@
   margin-right: auto;
 }
 
+.navbar .nav > * {
+  position: relative;
+}
+
 .navbar .navbar_text {
   margin-right: 24px;
   color: #333333;
+}
+
+.nav_badge {
+  position: absolute;
+  width: 36px;
+  height: 19px;
+  right: -15.5px;
+  top: -17px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 14px;
+  /* identical to box height, or 175% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  background: #e7462d;
+  border-radius: 8px;
+  padding: 3px 9px;
+}
+
+.mobile_nav {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 89;
+}
+
+@media (min-width: 992px) {
+  .mobile_nav {
+    display: none !important;
+  }
+}
+
+.mobile_nav button {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 35px 10px;
+}
+
+.mobile_nav button,
+.mobile_nav button:active,
+.mobile_nav button:hover,
+.mobile_nav button:focus {
+  background-color: unset !important;
+}
+
+.mobile_nav button > span {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  color: #757575;
 }

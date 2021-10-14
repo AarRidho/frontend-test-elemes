@@ -20,6 +20,26 @@ const Hero = () => {
                         <ButtonDaftarSekarang />
                         <ButtonAboutUs />
                     </div>
+                    <figure>
+                        <div className={styles.figure_2}>
+                            <Image src="/images/hero-figure-2.png" layout="fill" alt="figure-2" quality={100} unoptimized={true} />
+                            {/* <img src="/images/hero-figure-2.png" layout="fill" alt="figure-2" /> */}
+                        </div>
+                        <div className={styles.figure_1}>
+                            <Image src="/images/hero-figure-1.png" layout="fill" alt="figure-1" quality={100} unoptimized={true} />
+                            {/* <img src="/images/hero-figure-1.png" layout="fill" alt="figure-1" /> */}
+                        </div>
+                        <div className={styles.card_profile}>
+                            <div className={styles.image}>
+                                <Image src="/images/hero-figure-thumbnail-1.png" width={54} height={54} alt="hero-figure-thumbnail-1" />
+                            </div>
+                            <div className={styles.description}>
+                                <h5>Green Salad Tomato</h5>
+                                <p>Tomato</p>
+                                <StarRating rate={4} />
+                            </div>
+                        </div>
+                    </figure>
                 </div>
                 <figure>
                     <div className={styles.figure_2}>

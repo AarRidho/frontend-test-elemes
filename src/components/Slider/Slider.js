@@ -36,7 +36,7 @@ const sliders = [
         details: '11 items',
     },
     {
-        title: 'Doughnut',
+        title: 'Suprise! I\'ts Me Again! Doughnut',
         image: '/images/doughnut.svg',
         details: '11 items',
     },

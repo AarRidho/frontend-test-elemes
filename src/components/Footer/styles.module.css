@@ -1,6 +1,11 @@
 .container {
   background-color: #f9fff7;
-  max-width: 1239px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1239px;
+  }
 }
 
 .row {
@@ -10,7 +15,10 @@
   padding-top: 74.3px;
   padding-left: 62px;
   padding-right: 62px;
-  padding-bottom: 30px;
+}
+
+.row > div {
+  margin-bottom: 30px;
 }
 
 .logo_image {
@@ -69,6 +77,11 @@
 
 .nav_icon:hover .ig_icon path {
   fill: #fff;
+}
+
+.links {
+  margin-bottom: 30px;
+  overflow-wrap: break-word;
 }
 
 .links h5 {

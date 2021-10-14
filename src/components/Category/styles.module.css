@@ -2,6 +2,11 @@
   padding: 0;
 }
 
+.section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .title {
   margin-bottom: 32.78px;
 }
@@ -10,12 +15,25 @@
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
-  font-size: 38px;
-  line-height: 50px;
+  font-size: 24px;
+  line-height: 30px;
+  /* or 125% */
 
+  /* Color/Dark */
   color: #333333;
 }
 
 .title h3:nth-child(2) {
   color: #8bac3e;
+}
+
+@media (min-widht: 768px) {
+  .title h3 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    /* or 132% */
+  }
 }
