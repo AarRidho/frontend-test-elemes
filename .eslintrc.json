@@ -8,7 +8,7 @@
   ],
   "rules": {
     "indent": ["error", 4],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
