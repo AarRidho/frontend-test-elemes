@@ -1,0 +1,137 @@
+.container {
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 32.78px;
+}
+
+.title h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+
+  color: #333333;
+}
+
+.title h3:nth-child(2) {
+  color: #8bac3e;
+}
+
+.trending_cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card {
+  min-width: 282.98px;
+  max-width: 282.98px;
+
+  margin: 0px 10px 30px;
+
+  box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
+  border-radius: 17px;
+  border: none;
+
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  background-image: url("/images/background-card-trending.png");
+  background-position: center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.card:hover::before {
+  opacity: 100%;
+  backdrop-filter: blur(11px);
+}
+
+.card_image {
+  position: relative;
+  z-index: 2;
+
+  width: 119px;
+  height: 120px;
+
+  margin: 33px 20.68px 0px;
+}
+
+.card_body {
+  z-index: 2;
+
+  padding: 19px 0px 34px;
+  margin: 0px 20.68px 0px;
+}
+
+.card_title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 50px;
+  /* identical to box height, or 192% */
+
+  color: #000000;
+
+  margin-bottom: 0;
+}
+
+.card_subtitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* Primary */
+  color: #8bac3e;
+
+  margin-bottom: 19px;
+}
+
+.load_more {
+  display: flex;
+  justify-content: center;
+}
+
+.load_more button {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  padding: 15px 33px;
+  margin-top: 38px;
+}
+
+.load_more button:hover,
+.load_more button:focus {
+  background-color: #8bac3e !important;
+}
+
+.load_more button:hover,
+.load_more button:focus {
+  background-color: #8bac3e;
+}
+.load_more button:active {
+  background-color: #708b32 !important;
+}

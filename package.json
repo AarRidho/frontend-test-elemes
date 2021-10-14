@@ -1,26 +1,30 @@
 {
-  "name": "frontend-test-elemes",
-  "version": "0.1.0",
-  "private": true,
-  "cacheDirectories": [
-    ".next/cache"
-  ],
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start -p $PORT",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "bootstrap": "4.6.0",
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "reactstrap": "^8.10.0"
-  },
-  "devDependencies": {
-    "eslint": "8.0.0",
-    "eslint-config-next": "11.1.2",
-    "eslint-plugin-react": "^7.26.1"
-  }
+    "name": "frontend-test-elemes",
+    "version": "0.1.0",
+    "private": true,
+    "cacheDirectories": [
+        ".next/cache"
+    ],
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start -p $PORT",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "bootstrap": "4.6.0",
+        "classnames": "^2.3.1",
+        "keen-slider": "^5.5.1",
+        "next": "11.1.2",
+        "prop-types": "^15.7.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "reactstrap": "^8.10.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-next": "11.1.2",
+        "eslint-plugin-react": "^7.26.0",
+        "eslint-plugin-react-hooks": "^4.2.0"
+    }
 }

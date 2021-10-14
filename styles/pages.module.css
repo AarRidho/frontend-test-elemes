@@ -1,14 +1,31 @@
-.page-title > h2 {
-  margin-bottom: 20px;
-  padding: 0 15px;
+.home_page .hero {
+  /* HERO */
+  margin-bottom: 42px;
 }
 
-.login-page {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-image: url("/img/unj-bg.png"); */
-  background-color: #f8f8f8;
+.home_page .category {
+  /* Group 393 */
+  position: absolute;
+  width: 1698px;
+  height: 573px;
+  left: -531px;
+  top: 897px;
+}
+
+.title h3 {
+  position: absolute;
+  width: 383px;
+  height: 60px;
+  left: calc(50% - 383px / 2 - 2.5px);
+  top: 961px;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  /* or 125% */
+
+  /* Color/Dark */
+  color: #333333;
 }
