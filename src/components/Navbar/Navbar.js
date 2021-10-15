@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavbarReact light expand="lg" className={styles.navbar}>
             <Container className={styles.container}>
                 <NavbarBrand href="/" className={styles.brand}>
-                    <Image src="/images/logo-elemes.png" width={207} height={50} alt="logo-brand" />
+                    <Image src="/images/logo-elemes.png" layout="fill" alt="logo-brand" />
                 </NavbarBrand>
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className={styles.nav} navbar>

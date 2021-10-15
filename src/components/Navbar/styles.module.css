@@ -24,7 +24,24 @@
 }
 
 .navbar .brand {
+  position: relative;
   padding: 0;
+  width: 150px;
+  height: 36px;
+}
+
+@media (min-width: 992px) {
+  .navbar .brand {
+    width: 207px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar .brand {
+    width: 207px;
+    height: 50px;
+  }
 }
 
 .navbar .nav {
