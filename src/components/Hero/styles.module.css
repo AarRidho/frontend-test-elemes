@@ -79,7 +79,6 @@
   padding: 0px;
 
   position: static;
-  width: 418px;
   height: 42px;
   left: 0px;
   top: 659.16px;
@@ -157,7 +156,8 @@
 }
 
 .card > figure {
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
   height: 319.16px;
 
@@ -174,22 +174,39 @@
 .card > figure .figure_2 {
   position: absolute;
 }
+
 .card > figure .figure_1 {
   width: 234.21px;
   height: 255.31px;
-  bottom: 32.1px;
-  right: 154.03px;
 }
+
 .card > figure .figure_2 {
   width: 290px;
   height: 319.16px;
-  top: 0;
-  right: 123.78px;
+}
+
+.card > figure .figure_1,
+.card > figure .figure_2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card > figure .card_profile {
+  left: 50%;
   bottom: 32.16px;
-  right: 0;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 480px) {
+  .card > figure .figure_1 {
+    bottom: 32.1px;
+    right: 154.03px;
+  }
+  .card > figure .figure_2 {
+    top: 0;
+    right: 123.78px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -220,11 +237,21 @@
 
   background: rgba(255, 255, 255, 0.74);
   box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
-  backdrop-filter: blur(11px);
   /* Note: backdrop-filter has minimal browser support */
 
   padding: 12px 23px 22px;
   border-radius: 17px;
+}
+
+@media (min-width: 480px) {
+  .card > figure .card_profile {
+    top: unset;
+    left: unset;
+    transform: unset;
+    bottom: 32.16px;
+    right: 0;
+    backdrop-filter: blur(11px);
+  }
 }
 
 .card_profile .image {
