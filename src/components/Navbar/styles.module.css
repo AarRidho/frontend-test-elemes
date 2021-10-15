@@ -86,10 +86,10 @@
 .mobile_nav {
   background-color: #ffffff;
   position: fixed;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
-  height: 89;
+  height: 89px;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 36px !important;
