@@ -90,6 +90,8 @@
   left: 0;
   right: 0;
   height: 89;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-left: 36px !important;
   padding-right: 36px !important;
 }
